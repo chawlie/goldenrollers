@@ -6,3 +6,21 @@
   border-radius: 3px;
   border: none;
 }
+
+.button {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}
+
+.footer-btn {
+    padding: 16px 10px 0;
+
+    @media #{$medium-up} {
+      padding: 16px 20px 0;
+    }
+}

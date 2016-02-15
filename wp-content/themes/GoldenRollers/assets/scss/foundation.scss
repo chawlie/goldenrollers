@@ -69,6 +69,10 @@
   Add your scss files below to structure your project styles
 */
 
+//Custom Theme Settings
+@import "global/variables";
+@import "global/page";
+
 // Modules
 @import "modules/navigation";
 @import "modules/footer";
@@ -79,6 +83,7 @@
 @import "components/featured-image";
 @import "components/dividers";
 @import "components/links";
+@import "components/home";
 
 // Templates
 @import "templates/front";

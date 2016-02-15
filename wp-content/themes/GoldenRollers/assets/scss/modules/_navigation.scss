@@ -59,3 +59,39 @@
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
   .dropdown.menu .has-submenu.is-down-arrow>a::after { border: 0; }
 }
+
+.title-bar {
+  border-bottom: 5px solid #dcaf27;
+}
+
+.desktop-navbar {
+  text-align: center;
+  background-color: #000;
+  border-bottom: 5px solid #dcaf27;
+
+  @media #{$small-only} {
+    display: none;
+  }
+
+  .menu-item a {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px;
+    letter-spacing: 1px;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+
+    @media #{$large-up} {
+      font-size: 20px;
+      padding: 30px;
+    }
+  }
+}
+
+.desktop-navigation {
+  display: inline-block;
+  vertical-align: middle;
+}
