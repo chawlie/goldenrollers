@@ -12,13 +12,30 @@
 ?>
 
 		</section>
-		<div id="footer-container">
-			<footer id="footer">
-				<?php do_action( 'foundationpress_before_footer' ); ?>
-				<?php dynamic_sidebar( 'footer-widgets' ); ?>
-				<?php do_action( 'foundationpress_after_footer' ); ?>
-			</footer>
-		</div>
+		<footer class="page-footer" id="footer">
+			<div class="footer-container">
+				<div class="row">
+					<div class="medium-5 columns">
+						<div class="site-by">
+							<div class="ghisallo-logo">
+								<a href="http://ghisallo.org/"><img src="<?php echo get_bloginfo('template_directory');?>/assets/images/ghisallo_cycling_initiative.png" alt="Ghisallo Cycling Initiative" title="Ghisallo Cycling Initiative"></a>
+							</div>
+							<div class="copyright">
+								All rights reserved Copyright© 2016
+							</div>
+						</div>
+					</div>
+					<div class="medium-7 columns text-right">
+						<div class="footer-links">
+							<a href=""><span class="footer-btn button">Volunteer</span></a>
+							<a href=""><span class="footer-btn button">Donate</span></a>
+							<a href="https://www.facebook.com/GoldenRollers/"><span class="button social-btn facebook"></span></a>
+							<a href="https://www.instagram.com/goldenrollers/"><span class="button social-btn instagram"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<?php do_action( 'foundationpress_layout_end' ); ?>
 

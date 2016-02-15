@@ -20,6 +20,10 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-precomposed.png">
+
+		<!-- Import Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:900,700,400,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -37,19 +41,18 @@
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
 			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				MENU
 			</div>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
-			<div class="top-bar-left">
-				<ul class="menu">
-					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-				</ul>
-			</div>
-			<div class="top-bar-right">
+		<nav class="desktop-navbar">
+			<div class="desktop-navigation">
 				<?php foundationpress_top_bar_r(); ?>
+			</div>
+		</nav>
 
+		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
+			<div class="top-bar-right">
 				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
 					<?php get_template_part( 'parts/mobile-top-bar' ); ?>
 				<?php endif; ?>

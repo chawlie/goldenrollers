@@ -4,94 +4,37 @@ Template Name: Front
 */
 get_header(); ?>
 
-<header id="front-hero" role="banner">
-	<div class="marketing">
-		<div class="tagline">
-			<h1><?php bloginfo( 'name' ); ?></h1>
-			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/foundationpress">Download FoundationPress</a>
-		</div>
-
-		<div id="watch">
-			<section id="stargazers">
-				<a href="https://github.com/olefredrik/foundationpress">1.5k stargazers</a>
-			</section>
-			<section id="twitter">
-				<a href="https://twitter.com/olefredrik">@olefredrik</a>
-			</section>
+<header class="hero">
+	<div class="row">
+		<div class="logo">
+			<img src="<?php echo get_bloginfo('template_directory');?>/assets/images/golden_rollers_logo.png" alt="Golden Rollers" title="Golden Rollers">
 		</div>
 	</div>
-
 </header>
-
-<?php do_action( 'foundationpress_before_content' ); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-<section class="intro" role="main">
-	<div class="fp-intro">
-
-		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-			<div class="entry-content">
-				<?php the_content(); ?>
+<section>
+	<div class="row">
+		<div class="small-12 medium-12 columns">
+			<div class="featured-content-container bg-yellow clearfix neg-top-margin">
+				<div class="featured-content left">
+					<h1>The Golden Rollers Program</h1>
+					<p>is a collaboration between the Ghisallo Cycling Initiative and the Conley-Guerrero Senior Activity Center in East Austin that provides an opportunity for adults aged 50 and older to engage in low-impact, bicycle-based recreation, exploration, and transportation. The program uses three-wheeled adult trikes to enable riders of all skill levels to cycle the Boggy Creek Trail system and the Pedernales protected bikeway, which connect to neighborhood amenities like the Rosewood and Metz Recreation Centers, the Butler Hike-and-Bike trail, and an HEB grocery store.</p>
+				</div>
+				<div class="featured-content-image right" style="background-image: url(<?php echo get_bloginfo('template_directory');?>/assets/images/home-featured-01.jpg);">
+				</div>
 			</div>
-			<footer>
-				<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-				<p><?php the_tags(); ?></p>
-			</footer>
-			<?php do_action( 'foundationpress_page_before_comments' ); ?>
-			<?php comments_template(); ?>
-			<?php do_action( 'foundationpress_page_after_comments' ); ?>
 		</div>
-
+		<h2 class="floating-headline">Never too old to roll</h2>
+		<div class="small-12 medium-12 columns">
+			<div class="featured-content-container bg-yellow clearfix">
+				<div class="featured-content right">
+					<h1>Seniors at Conley-Guerrero</h1>
+					<p>attend an orientation class where they are tested for hand and leg strength and balance, provided classroom instruction, and given the opportunity to practice starting, stopping, turning, and obstacle avoidance. Participants can then attend trail rides led by instructors, center staff, and community members. Currently, there are eight trikes available, as well as an two traditional bicycles so a staff member or volunteer can ride along with the Rollers. Helmets, pumps, and basic tools are also available for general upkeep and maintenance of the trikes.</p>
+				</div>
+				<div class="featured-content-image right" style="background-image: url(<?php echo get_bloginfo('template_directory');?>/assets/images/home-featured-02.jpg);">
+				</div>
+			</div>
+		</div>
 	</div>
-
 </section>
-<?php endwhile;?>
-<?php do_action( 'foundationpress_after_content' ); ?>
-
-<div class="section-divider">
-	<hr />
-</div>
-
-
-<section class="benefits">
-	<header>
-		<h2>Build Foundation based sites, powered by WordPress</h2>
-		<h4>Foundation is the professional choice for designers, developers and teams. <br /> WordPress is by far, <a href="http://trends.builtwith.com/cms">the world's most popular CMS</a> (currently powering 38% of the web).</h4>
-	</header>
-
-	<div class="semantic">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/semantic.svg" alt="semantic">
-		<h3>Semantic</h3>
-		<p>Everything is semantic. You can have the cleanest markup without sacrificing the utility and speed of Foundation.</p>
-	</div>
-
-	<div class="responsive">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/responsive.svg" alt="responsive">
-		<h3>Responsive</h3>
-		<p>You can build for small devices first. Then, as devices get larger and larger, layer in more complexity for a complete responsive design.</p>
-
-	</div>
-
-	<div class="customizable">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/customizable.svg" alt="customizable">
-		<h3>Customizable</h3>
-		<p>You can customize your build to include or remove certain elements, as well as define the size of columns, colors, font size and more.</p>
-
-	</div>
-
-	<div class="professional">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/demo/professional.svg" alt="professional">
-		<h3>Professional</h3>
-		<p>Millions of designers and developers depend on Foundation. We have business support, training and consulting to help grow your product or service.</p>
-	</div>
-
-	<div class="why-foundation">
-		<a href="/kitchen-sink">See what's in Foundation out of the box →</a>
-	</div>
-
-</section>
-
-
 
 <?php get_footer(); ?>

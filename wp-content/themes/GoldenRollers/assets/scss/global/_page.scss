@@ -1,0 +1,99 @@
+body {
+    background-color: #262626;
+    background-image: url(../images/broken_noise.png);
+}
+
+.subpage-hero {
+    max-width: 500px;
+    margin: 0 auto;
+
+    .logo {
+        margin: 0 auto 30px;
+    }
+}
+
+.neg-top-margin {
+    margin-top: -140px;
+}
+
+.featured-content-container {
+    width: 100%;
+    margin-bottom: 30px;
+
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+    .featured-content {
+        padding: 30px;
+        width: 100%;
+        font-weight: $font-weight-black;
+
+        @media #{$large-up} {
+            width: 40%;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #fff;
+            font-weight: $font-weight-black;
+            display: inline;
+            margin: 0;
+
+            @media #{$large-up} {
+                display: block;
+            }
+        }
+        p {
+            font-size: 18px;
+            display: inline;
+
+            @media #{$large-up} {
+                display: block;
+            }
+        }
+    }
+    .featured-content-image {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+
+        @media #{$large-up} {
+            width: 60%;
+            min-height: 550px;
+        }
+    }
+
+}
+
+.floating-headline {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #c7c4b7;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: $font-weight-black;
+    letter-spacing: 2px;
+
+    @media #{$medium-up} {
+        font-size: 32px;
+    }
+}
+
+.bg-yellow {
+    background-color: $primary-color;
+}
+
+.entry-title {
+    background-color: $primary-color;
+    padding: 30px 40px;
+    margin: 0;
+}
+
+.page-content {
+    background-color: #fff;
+    padding: 40px;
+}
