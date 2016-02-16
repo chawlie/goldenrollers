@@ -91,9 +91,15 @@ body {
     background-color: $primary-color;
     padding: 30px 40px;
     margin: 0;
+    font-weight: $font-weight-black;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 36px;
 }
 
 .page-content {
     background-color: #fff;
     padding: 40px;
+    border-bottom: 5px solid $primary-color;
 }
