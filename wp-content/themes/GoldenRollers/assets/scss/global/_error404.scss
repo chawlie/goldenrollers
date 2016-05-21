@@ -1,0 +1,31 @@
+.error-404 {
+    h1 {
+        font-size: 50px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 30px;
+
+        @media #{$medium-up} {
+            font-size: 90px;
+        }
+    }
+
+    p {
+        color: #fff;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom: 40px;
+
+        @media #{$medium-up} {
+
+        }
+    }
+
+    .button {
+        font-weight: 20px !important;
+        padding: 20px 20px;
+        color: #333;
+    }
+}

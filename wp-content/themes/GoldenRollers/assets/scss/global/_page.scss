@@ -3,6 +3,10 @@ body {
     background-image: url(../images/broken_noise.png);
 }
 
+hr {
+    border-bottom: 5px solid $primary-color;
+}
+
 .subpage-hero {
     max-width: 500px;
     margin: 0 auto;
@@ -89,17 +93,85 @@ body {
 
 .entry-title {
     background-color: $primary-color;
-    padding: 30px 40px;
+    padding: 10px 20px;
     margin: 0;
     font-weight: $font-weight-black;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 36px;
+    font-size: 24px;
+
+    @media #{$medium-up} {
+        padding: 30px 40px;
+        font-size: 36px;
+    }
 }
 
 .page-content {
     background-color: #fff;
-    padding: 40px;
+    padding: 20px;
     border-bottom: 5px solid $primary-color;
+    margin-bottom: 30px;
+
+    @media #{$medium-up} {
+        padding: 40px;
+        margin-bottom: 0;
+    }
+}
+
+.blog-title.entry-title {
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 1.2;
+}
+
+.blog-content.page-content {
+    font-size: 18px;
+    margin-bottom: 50px;
+
+    .entry-content {
+
+        img {
+            margin-bottom: 30px;
+        }
+
+        .button {
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+.single-post-featured-image {
+    img {
+        margin-bottom: 30px;
+    }
+}
+
+.page-sidebar {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 0 30px;
+    margin-top: 0 !important;
+    border-bottom: 5px solid $primary-color;
+    border-top: 5px solid $primary-color;
+
+    @media #{$medium-up} {
+        padding: 40px;
+    }
+}
+
+.partner-logo {
+    display: table-cell;
+    vertical-align: middle;
+    height: 200px;
+    padding: 0;
+
+    @media #{$medium-up} {
+        padding: 15px;
+    }
+}
+
+.main-content:last-child:not(:first-child),
+.columns:last-child:not(:first-child) {
+    float: left !important;
 }

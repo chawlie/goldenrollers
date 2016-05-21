@@ -84,6 +84,11 @@
       background-color: $primary-color;
     }
 
+    @media #{$medium-up} {
+      font-size: 14px;
+      padding: 14px;
+    }
+
     @media #{$large-up} {
       font-size: 20px;
       padding: 30px;

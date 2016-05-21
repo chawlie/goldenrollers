@@ -10,7 +10,7 @@ get_header(); ?>
   <header class="subpage-hero">
     <div class="row">
       <div class="logo">
-        <img src="<?php echo get_bloginfo('template_directory');?>/assets/images/golden_rollers_logo.png" alt="Golden Rollers" title="Golden Rollers">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_bloginfo('template_directory');?>/assets/images/golden_rollers_logo.png" alt="Golden Rollers" title="Golden Rollers"></a>
       </div>
     </div>
   </header>
