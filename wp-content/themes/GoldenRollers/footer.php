@@ -27,8 +27,8 @@
 					</div>
 					<div class="medium-7 columns text-right">
 						<div class="footer-links">
-							<a href=""><span class="footer-btn button">Volunteer</span></a>
-							<a href=""><span class="footer-btn button">Donate</span></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>volunteer/"><span class="footer-btn button">Volunteer</span></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>donate/"><span class="footer-btn button">Donate</span></a>
 							<a href="https://www.facebook.com/GoldenRollers/"><span class="button social-btn facebook"></span></a>
 							<a href="https://www.instagram.com/goldenrollers/"><span class="button social-btn instagram"></span></a>
 						</div>

@@ -72,6 +72,9 @@
 //Custom Theme Settings
 @import "global/variables";
 @import "global/page";
+@import "global/typography";
+@import "global/forms";
+@import "global/error404";
 
 // Modules
 @import "modules/navigation";
@@ -92,3 +95,4 @@
 @import "templates/page-sidebar-left";
 @import "templates/page-full-width";
 @import "templates/single-post";
+@import "templates/blog-feed";
