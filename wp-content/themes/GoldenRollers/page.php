@@ -40,7 +40,10 @@
              <p><?php the_tags(); ?></p>
          </footer>
          <?php do_action( 'foundationpress_page_before_comments' ); ?>
-         <?php comments_template(); ?>
+         <?php
+         // Removing comments to prevent spam comments on attachment pages.
+         // comments_template();
+         ?>
          <?php do_action( 'foundationpress_page_after_comments' ); ?>
         </section>
     </article>
